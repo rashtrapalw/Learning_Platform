@@ -8,29 +8,20 @@ function Home() {
     <>
       {/* Hero Section */}
       <div
-        className="container-fluid"
+        className="container-fluid d-flex align-items-center"
         style={{
           backgroundImage: `url(${Hero})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
           minHeight: "100vh",
-          minWidth: "100%",
-          padding: "2rem 2rem 0 2rem",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "flex-start",
         }}
       >
-        <div className="text-white text-start ps-5 " style={{marginLeft: "90px"}}>
-          <h1 className="fw-bold" style={{ fontSize: "60px" }}>
-            Welcome
-          </h1>
-          <h1 className="fw-bold" style={{ fontSize: "60px" }}>
-            Learning Platform
-          </h1>
+        <div className="text-white px-4 px-md-5 text-center text-md-start">
+          <h1 className="fw-bold display-4 display-md-3">Welcome</h1>
+          <h1 className="fw-bold display-4 display-md-3">Learning Platform</h1>
 
-          <p className="lead">
+          <p className="lead mt-3">
             Learn React, Java, AWS and more with our structured courses.
           </p>
 
@@ -39,12 +30,11 @@ function Home() {
       </div>
 
       {/* Features Section */}
-      <div className="container-fluid py-5 mt-n5" style={{ marginTop: "-120px" }}>
-
+      <div className="container-fluid py-5">
         <div className="container">
           <div className="row text-center">
             {/* Block 1 */}
-            <div className="col-md-4 mb-4">
+            <div className="col-12 col-md-4 mb-4">
               <Card className="h-100 shadow border-0 rounded-4 p-4">
                 <Book size={50} className="text-primary mb-3" />
                 <h5 className="fw-bold">60+ UX courses</h5>
@@ -55,7 +45,7 @@ function Home() {
             </div>
 
             {/* Block 2 */}
-            <div className="col-md-4 mb-4">
+            <div className="col-12 col-md-4 mb-4">
               <Card className="h-100 shadow border-0 rounded-4 p-4">
                 <Person size={50} className="text-success mb-3" />
                 <h5 className="fw-bold">Expert instructors</h5>
@@ -66,7 +56,7 @@ function Home() {
             </div>
 
             {/* Block 3 */}
-            <div className="col-md-4 mb-4">
+            <div className="col-12 col-md-4 mb-4">
               <Card className="h-100 shadow border-0 rounded-4 p-4">
                 <Clock size={50} className="text-danger mb-3" />
                 <h5 className="fw-bold">Life time access</h5>

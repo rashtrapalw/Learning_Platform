@@ -3,14 +3,11 @@ import { Link } from "react-router-dom";
 
 function Header() {
   return (
-    <nav
-      className="navbar navbar-expand-lg navbar-dark bg-primary"
-      style={{ minHeight: "80px", paddingTop: "1rem", paddingBottom: "1rem" }}
-    >
+    <nav className="navbar navbar-expand-lg navbar-dark bg-primary py-3">
       <div className="container">
         {/* Brand */}
-        <Link className="navbar-brand fw-bold" to="/">
-          <h2>Courses</h2>
+        <Link className="navbar-brand fw-bold fs-3" to="/">
+          Courses
         </Link>
 
         {/* Toggle button for mobile */}
@@ -19,21 +16,33 @@ function Header() {
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon"></span>
         </button>
 
         {/* Navbar Links */}
-        <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul className="navbar-nav align-items-lg-center">
+        <div
+          className="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul className="navbar-nav align-items-lg-center text-center text-lg-start">
             <li className="nav-item">
-              <Link className="nav-link active" to="/">Home</Link>
+              <Link className="nav-link active" to="/">
+                Home
+              </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/courses">Courses</Link>
+              <Link className="nav-link" to="/courses">
+                Courses
+              </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/about">About</Link>
+              <Link className="nav-link" to="/about">
+                About
+              </Link>
             </li>
 
             {/* Dropdown */}
@@ -50,27 +59,39 @@ function Header() {
               </a>
               <ul className="dropdown-menu" aria-labelledby="blogDropdown">
                 <li>
-                  <Link className="dropdown-item" to="/blog">Blog</Link>
+                  <Link className="dropdown-item" to="/blog">
+                    Blog
+                  </Link>
                 </li>
                 <li>
-                  <Link className="dropdown-item" to="/blog-details">Blog Details</Link>
+                  <Link className="dropdown-item" to="/blog-details">
+                    Blog Details
+                  </Link>
                 </li>
                 <li>
-                  <Link className="dropdown-item" to="/elements">Element</Link>
+                  <Link className="dropdown-item" to="/elements">
+                    Element
+                  </Link>
                 </li>
               </ul>
             </li>
 
             <li className="nav-item">
-              <Link className="nav-link" to="/contact">Contact</Link>
+              <Link className="nav-link" to="/contact">
+                Contact
+              </Link>
             </li>
 
             {/* Buttons */}
-            <li className="nav-item ms-lg-3">
-              <Link className="btn btn-light" to="/join">Join</Link>
+            <li className="nav-item ms-lg-3 my-2 my-lg-0">
+              <Link className="btn btn-light w-100 w-lg-auto" to="/join">
+                Join
+              </Link>
             </li>
-            <li className="nav-item ms-lg-2">
-              <Link className="btn btn-dark" to="/login">Log in</Link>
+            <li className="nav-item ms-lg-2 my-2 my-lg-0">
+              <Link className="btn btn-dark w-100 w-lg-auto" to="/login">
+                Log in
+              </Link>
             </li>
           </ul>
         </div>

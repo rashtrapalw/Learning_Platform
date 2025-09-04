@@ -6,7 +6,7 @@ import featured3 from "../assets/featured3.png";
 const CourseCard = () => {
   return (
     <div className="container my-5">
-      <h2 className="text-center fw-bold mb-5">Our featured courses</h2>
+      <h2 className="text-center fw-bold mb-5">Our Featured Courses</h2>
 
       <div
         id="courseCarousel"
@@ -35,24 +35,24 @@ const CourseCard = () => {
         <div className="carousel-inner">
           {/* First Slide */}
           <div className="carousel-item active">
-            <div className="row">
-              <div className="col-md-4">
+            <div className="row g-3">
+              <div className="col-sm-12 col-md-6 col-lg-4">
                 <div className="card h-100 shadow-sm border-0">
                   <img
                     src={featured1}
-                    className="card-img-top"
+                    className="card-img-top img-fluid"
                     alt="Course 1"
                     style={{ height: "200px", objectFit: "cover" }}
                   />
                   <div className="card-body">
                     <small className="text-muted">User Experience</small>
                     <h5 className="fw-bold mt-2">
-                      Fundamental of UX for Application design
+                      Fundamental of UX for Application Design
                     </h5>
                     <p className="text-muted" style={{ fontSize: "0.9rem" }}>
                       The automated process all your website tasks. Discover
-                      tools and techniques to engage effectively with
-                      vulnerable children and young people.
+                      tools and techniques to engage effectively with children
+                      and young people.
                     </p>
                     <div className="d-flex align-items-center mb-2">
                       <span className="text-warning me-2">★★★★☆</span>
@@ -68,23 +68,23 @@ const CourseCard = () => {
                 </div>
               </div>
 
-              <div className="col-md-4">
+              <div className="col-sm-12 col-md-6 col-lg-4">
                 <div className="card h-100 shadow-sm border-0">
                   <img
                     src={featured2}
-                    className="card-img-top"
+                    className="card-img-top img-fluid"
                     alt="Course 2"
                     style={{ height: "200px", objectFit: "cover" }}
                   />
                   <div className="card-body">
                     <small className="text-muted">User Experience</small>
                     <h5 className="fw-bold mt-2">
-                      Fundamental of UX for Application design
+                      Fundamental of UX for Application Design
                     </h5>
                     <p className="text-muted" style={{ fontSize: "0.9rem" }}>
                       The automated process all your website tasks. Discover
-                      tools and techniques to engage effectively with
-                      vulnerable children and young people.
+                      tools and techniques to engage effectively with children
+                      and young people.
                     </p>
                     <div className="d-flex align-items-center mb-2">
                       <span className="text-warning me-2">★★★★☆</span>
@@ -100,23 +100,23 @@ const CourseCard = () => {
                 </div>
               </div>
 
-              <div className="col-md-4">
+              <div className="col-sm-12 col-md-6 col-lg-4">
                 <div className="card h-100 shadow-sm border-0">
                   <img
                     src={featured3}
-                    className="card-img-top"
+                    className="card-img-top img-fluid"
                     alt="Course 3"
                     style={{ height: "200px", objectFit: "cover" }}
                   />
                   <div className="card-body">
                     <small className="text-muted">User Experience</small>
                     <h5 className="fw-bold mt-2">
-                      Fundamental of UX for Application design
+                      Fundamental of UX for Application Design
                     </h5>
                     <p className="text-muted" style={{ fontSize: "0.9rem" }}>
                       The automated process all your website tasks. Discover
-                      tools and techniques to engage effectively with
-                      vulnerable children and young people.
+                      tools and techniques to engage effectively with children
+                      and young people.
                     </p>
                     <div className="d-flex align-items-center mb-2">
                       <span className="text-warning me-2">★★★★☆</span>
@@ -136,20 +136,19 @@ const CourseCard = () => {
 
           {/* Second Slide */}
           <div className="carousel-item">
-            <div className="row">
-              {/* You can repeat same cards with different images/content */}
-              <div className="col-md-4">
+            <div className="row g-3">
+              <div className="col-sm-12 col-md-6 col-lg-4">
                 <div className="card h-100 shadow-sm border-0">
                   <img
                     src={featured1}
-                    className="card-img-top"
+                    className="card-img-top img-fluid"
                     alt="Course 4"
                     style={{ height: "200px", objectFit: "cover" }}
                   />
                   <div className="card-body">
                     <small className="text-muted">User Experience</small>
                     <h5 className="fw-bold mt-2">
-                      Fundamental of UX for Application design
+                      Fundamental of UX for Application Design
                     </h5>
                     <p className="text-muted" style={{ fontSize: "0.9rem" }}>
                       Same description for second slide course.
@@ -167,7 +166,6 @@ const CourseCard = () => {
                   </div>
                 </div>
               </div>
-              {/* Add more cards here */}
             </div>
           </div>
         </div>
