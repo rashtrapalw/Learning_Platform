@@ -30,7 +30,8 @@ function Home() {
       </div>
 
       {/* Features Section */}
-      <div className="container-fluid py-5">
+      <div className="container-fluid py-5" style={{ marginTop: "-120px" }}>
+        {/* 👆 negative margin makes this block move up */}
         <div className="container">
           <div className="row text-center">
             {/* Block 1 */}

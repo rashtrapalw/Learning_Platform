@@ -10,6 +10,11 @@ import SkillsSection from "./components/SkillsSection";
 import SubjectsSection from "./components/SubjectsSection";
 import OutcomesSection from "./components/OutcomesSection";
 import ExpertsSection from "./components/ExpertsSection";
+
+
+//here import course date 
+import courseData from "./data/courseData.js";
+
 function App() {  
   return ( 
     <Router> 
@@ -21,7 +26,7 @@ function App() {
         <Route path="/about" element={<About />} /> 
         <Route path="/contact" element={<Contact />} />  
       </Routes> 
-      <CourseCard />
+       <CourseCard courses={courseData} />
       <SkillsSection />
       <SubjectsSection />
       <OutcomesSection />
