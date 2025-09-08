@@ -2,6 +2,8 @@ import React from "react";
 import Hero from "../assets/h1_hero.png";
 import { Card } from "react-bootstrap";
 import { Book, Person, Clock } from "react-bootstrap-icons"; // icons
+import CourseCard from "../components/CourseCard";
+import courseData from "../data/courseData"; // import course data
 
 function Home() {
   return (
@@ -69,7 +71,9 @@ function Home() {
           </div>
         </div>
       </div>
+      <CourseCard courses={courseData} />
     </>
+    
   );
 }
 

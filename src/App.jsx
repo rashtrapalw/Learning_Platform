@@ -36,7 +36,7 @@ function App() {
         <Route path="/contact" element={<Contact />} /> 
         <Route path="/login" element={<Login />} /> 
       </Routes> 
-       <CourseCard courses={courseData} />
+       {/* <CourseCard courses={courseData} /> */}
       <SkillsSection />
       <SubjectsSection />
       <OutcomesSection />

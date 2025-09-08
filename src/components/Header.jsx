@@ -28,19 +28,19 @@ function Header() {
           className="collapse navbar-collapse justify-content-end"
           id="navbarNav"
         >
-          <ul className="navbar-nav align-items-lg-center text-center text-lg-start">
+          <ul className="navbar-nav align-items-lg-center text-center text-lg-start gap-3">
             <li className="nav-item">
-              <Link className="nav-link active" to="/">
+              <Link className="nav-link active fw-semibold" to="/">
                 Home
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/courses">
+              <Link className="nav-link fw-semibold" to="/courses">
                 Courses
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/about">
+              <Link className="nav-link fw-semibold" to="/about">
                 About
               </Link>
             </li>
@@ -48,7 +48,7 @@ function Header() {
             {/* Dropdown */}
             <li className="nav-item dropdown">
               <a
-                className="nav-link dropdown-toggle"
+                className="nav-link dropdown-toggle fw-semibold"
                 href="#"
                 id="blogDropdown"
                 role="button"
@@ -77,19 +77,23 @@ function Header() {
             </li>
 
             <li className="nav-item">
-              <Link className="nav-link" to="/contact">
+              <Link className="nav-link fw-semibold" to="/contact">
                 Contact
               </Link>
             </li>
 
             {/* Buttons */}
-            <li className="nav-item ms-lg-3 my-2 my-lg-0">
-              <Link className="btn btn-light w-100 w-lg-auto" to="/join">
+            <li className="nav-item ms-lg-3">
+              <Link className="btn btn-light px-4 py-2 fw-bold" to="/join">
                 Join
               </Link>
             </li>
-            <li className="nav-item ms-lg-2 my-2 my-lg-0">
-              <Link className="btn btn-dark w-100 w-lg-auto" to="/login">
+            <li className="nav-item ms-lg-2">
+              <Link
+                className="btn btn-dark px-4 py-2 fw-bold"
+                style={{ fontSize: "1rem", borderRadius: "30px" }}
+                to="/login"
+              >
                 Log in
               </Link>
             </li>

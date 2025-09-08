@@ -24,11 +24,10 @@ function Courses() {
                   Home
                 </Link>
               </li>
-              <li
-                className="breadcrumb-item active text-white"
-                aria-current="page"
-              >
-                Services
+             <li className="breadcrumb-item">
+                <Link to="/" className="text-white text-decoration-none">
+                  Services
+                </Link>
               </li>
             </ol>
           </nav>
@@ -109,3 +108,4 @@ function Courses() {
 }
 
 export default Courses;
+
