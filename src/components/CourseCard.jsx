@@ -1,13 +1,39 @@
 import React from "react";
+import Slider from "react-slick";
 
 const CourseCard = ({ courses }) => {
+  // Carousel settings
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 600,
+    slidesToShow: 3,   // show 3 cards at a time
+    slidesToScroll: 1, // move one by one
+    autoplay: true,
+    autoplaySpeed: 2500,
+    responsive: [
+      {
+        breakpoint: 992, // for tablets
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 768, // for mobile
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
+
   return (
     <div className="container my-5">
       <h2 className="text-center fw-bold mb-5">Our Featured Courses</h2>
 
-      <div className="row g-3">
+      <Slider {...settings}>
         {courses.map((course) => (
-          <div key={course.id} className="col-sm-12 col-md-6 col-lg-4">
+          <div key={course.id} className="px-2">
             <div className="card h-100 shadow-sm border-0">
               <img
                 src={course.img}
@@ -37,7 +63,7 @@ const CourseCard = ({ courses }) => {
             </div>
           </div>
         ))}
-      </div>
+      </Slider>
     </div>
   );
 };

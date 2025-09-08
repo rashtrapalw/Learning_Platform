@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Courses from "./pages/Courses"; 
 import About from "./pages/About"; 
 import Contact from "./pages/Contact";  
+import Login from "./pages/Login";
 import CourseCard from "./components/CourseCard";
 import SkillsSection from "./components/SkillsSection";
 import SubjectsSection from "./components/SubjectsSection";
@@ -12,8 +13,16 @@ import OutcomesSection from "./components/OutcomesSection";
 import ExpertsSection from "./components/ExpertsSection";
 
 
+
+
 //here import course date 
 import courseData from "./data/courseData.js";
+
+
+// here i import  carousel
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 
 function App() {  
   return ( 
@@ -24,7 +33,8 @@ function App() {
         <Route path="/" element={<Home />} /> 
         <Route path="/courses" element={<Courses />} />  
         <Route path="/about" element={<About />} /> 
-        <Route path="/contact" element={<Contact />} />  
+        <Route path="/contact" element={<Contact />} /> 
+        <Route path="/login" element={<Login />} /> 
       </Routes> 
        <CourseCard courses={courseData} />
       <SkillsSection />
