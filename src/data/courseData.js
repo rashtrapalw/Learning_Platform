@@ -62,7 +62,7 @@ const courseData = [
   },
   {
     id: 6,
-    img: featured5,
+    img: featured6,
     category: "User Experience",
     title: "Fundamental of UX for Application Design",
     desc: "The automated process all your website tasks. Discover tools and techniques to engage effectively with children and young people.",
@@ -71,5 +71,5 @@ const courseData = [
     price: "$135",
   },
 ];
-
+  
 export default courseData;

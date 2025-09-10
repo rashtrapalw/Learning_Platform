@@ -1,13 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import CoursesLogo from "../assets/logo.png"; // Adjust path if needed
+
 function Header() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-primary py-3">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-primary py-3 sticky-top shadow-sm">
       <div className="container">
         {/* Brand */}
         <Link className="navbar-brand fw-bold fs-3" to="/">
-          Courses
+          <img
+            src={CoursesLogo}
+            alt="Courses Logo"
+            style={{ height: "30px", width: "auto" }}
+          />
         </Link>
 
         {/* Toggle button for mobile */}
@@ -83,15 +89,18 @@ function Header() {
             </li>
 
             {/* Buttons */}
-            <li className="nav-item ms-lg-3">
-              <Link className="btn btn-light px-4 py-2 fw-bold" to="/join">
+            <li className="nav-item ms-lg-3 my-2 my-lg-0">
+              <Link
+                className="btn btn-light px-4 py-2 fw-bold w-100 w-lg-auto"
+                to="/join"
+              >
                 Join
               </Link>
             </li>
-            <li className="nav-item ms-lg-2">
+            <li className="nav-item ms-lg-2 my-2 my-lg-0">
               <Link
-                className="btn btn-dark px-4 py-2 fw-bold"
-                style={{ fontSize: "1rem", borderRadius: "30px" }}
+                className="btn btn-dark px-4 py-2 fw-bold w-100 w-lg-auto"
+                style={{ fontSize: "1rem" }}
                 to="/login"
               >
                 Log in

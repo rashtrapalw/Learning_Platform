@@ -14,7 +14,7 @@ function Courses() {
         }}
       >
         <div className="container text-center text-lg-start">
-          <h1 className="fw-bold display-4">Our Courses</h1>
+          <h1 className="fw-bold display-4" style={{ marginTop: "150PX" }}>Our Courses</h1>
 
           {/* Breadcrumb */}
           <nav aria-label="breadcrumb">

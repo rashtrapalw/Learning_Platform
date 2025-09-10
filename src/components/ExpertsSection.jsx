@@ -67,12 +67,13 @@ const ExpertsSection = () => {
         <div className="row align-items-center">
           {/* Left Image */}
           <div className="col-lg-6 col-md-12 text-center mb-4 mb-lg-0">
-            <img
+              <img
               src={learnImg}
               alt="Learning"
               className="img-fluid rounded shadow"
-              style={{ maxWidth: "100%", height: "auto" }}
+              style={{ maxWidth: "500px", width: "100%", height: "auto" }}
             />
+
           </div>
 
           {/* Right Content */}

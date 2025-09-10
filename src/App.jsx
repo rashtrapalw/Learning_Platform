@@ -16,7 +16,7 @@ import ExpertsSection from "./components/ExpertsSection";
 
 
 //here import course date 
-import courseData from "./data/courseData.js";
+// import courseData from "./data/courseData.js"; 
 
 
 // here i import  carousel

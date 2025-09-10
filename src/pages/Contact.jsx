@@ -9,11 +9,11 @@ function Contact() {
         className="text-white d-flex align-items-center bg-primary"
         style={{
       
-          minHeight: "30vh",
+          minHeight: "40vh",
         }}
       >
         <div className="container text-left">
-          <h1 className="fw-bold display-5">Contact us</h1>
+          <h1 className="fw-bold display-5" style={{ marginTop: "150PX" }}>Contact us</h1>
           <nav aria-label="breadcrumb">
             <ol className="breadcrumb justify-content-left">
               <li className="breadcrumb-item">

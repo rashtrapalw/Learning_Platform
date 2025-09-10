@@ -3,6 +3,8 @@ import { Book, Person, Clock } from "react-bootstrap-icons";
 import { Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
+
+
 function About() {
   return (
     <>
@@ -12,10 +14,12 @@ function About() {
         style={{
           
           minHeight: "40vh",
+          
         }}
       >
-        <div className="container text-center text-lg-start">
-          <h1 className="fw-bold display-4">About us</h1>
+        <div className="container text-center text-lg-start" >
+          <h1 className="fw-bold display-4" style={{ marginTop:"140PX" }}>About us</h1>
+         
 
           {/* Breadcrumb */}
           <nav aria-label="breadcrumb">
@@ -70,6 +74,8 @@ function About() {
           </div>
         </div>
       </div>
+
+      
     </>
   );
 }
